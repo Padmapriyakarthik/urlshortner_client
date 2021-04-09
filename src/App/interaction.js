@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:4000';
+const BASE_URL = 'https://urlshortner-server.herokuapp.com';
 
-//const BASE_URL = 'https://demo-server-abc.herokuapp.com';
+
 
 export const login = (email,password)=>{
     return axios

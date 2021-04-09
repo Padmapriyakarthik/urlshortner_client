@@ -1,13 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Switch,Route, BrowserRouter as Router, Redirect} from "react-router-dom"
 import './App.css';
-// setup the routes
-//login
-//create logout
-//header component
-//Products
-    //admin product list with adding functionalities
-    //user product list with just view
 
     import { Header } from "./Header";
     import { Login} from "./Login";
