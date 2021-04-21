@@ -16,9 +16,9 @@ export const Shorturl = ()=>{
         const {email}=user
         if(!page)
         {
-            geturl(email).then((data)=>{
+            geturl(email).then((res)=>{
 
-                const {message}=data;
+                const {message}=res;
                 setUrls(message);
                 console.log(urls);
                 console.log(message);
