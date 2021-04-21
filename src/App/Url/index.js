@@ -21,6 +21,7 @@ export const Shorturl = ()=>{
                 const {message}=data;
                 setUrls(message);
                 console.log(urls);
+                console.log(message);
     
             }).catch((error)=>{
                 console.log(error);
