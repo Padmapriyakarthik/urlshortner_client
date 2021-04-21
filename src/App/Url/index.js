@@ -14,15 +14,14 @@ export const Shorturl = ()=>{
     const view=()=>{
         setPage(!page);
         const {email}=user
-        console.log(email);
         if(!page)
         {
             geturl(email).then((data)=>{
 
-                //const {message}=data;
-               // setUrls(message);
-                //console.log(urls);
-                console.log(data);
+                const {message}=data;
+               setUrls(message);
+                console.log(urls);
+                //console.log(data);
     
             }).catch((error)=>{
                 console.log(error);
