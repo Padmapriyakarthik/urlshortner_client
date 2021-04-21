@@ -93,7 +93,11 @@ export const Shorturl = ()=>{
     if(!page){
     return(
         <div className="container p-1">
-        <nav className="nav "><button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button></nav>
+            <ul className="nav">
+             <li className="nav-item">
+                 <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Create Short Url </button></li>
+                 <li className="nav-item"><button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+                 </li></ul>
         <div className="container center" >
         
             <form >
@@ -153,7 +157,8 @@ export const Shorturl = ()=>{
          <div className="container p-1">
              <ul className="nav">
              <li className="nav-item">
-                 <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Create Short Url </button>
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Create Short Url </button></li>
+                <li className="nav-item">   <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Create Short Url </button>
                  </li></ul>
          
         <div className="container p-5  center" >
