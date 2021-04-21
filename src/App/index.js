@@ -7,6 +7,7 @@ import './App.css';
     import { Shorturl} from "./Url";
     import {Password} from "./Password";
     import {Dashboard} from "./Dashboard";
+    import {CreatedUrl} from "./CreatedUrl";
    
 export const WrapperContext = React.createContext(
     {
@@ -101,6 +102,7 @@ export const App = ()=>{
 
                     <ProtectRoute path = "/Shorturl" component={Shorturl} />
                     <ProtectRoute path = "/Dashboard" component={Dashboard} />
+                    <ProtectRoute path = "/CreatedUrl" component={CreatedUrl} />
                     <Route exact path="/Password" component={Password}/>
 
 
