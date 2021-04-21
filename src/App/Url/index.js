@@ -140,7 +140,7 @@ export const Shorturl = ()=>{
                 >create url</button>
                   <span>visit the site with your url</span> 
 
-                <button type="button" className="btn btn-link" onClick={openUrl}>https://urlshortner-server.herokuapp.com/short-url/{message}</button>
+                <button type="button" className="btn btn-link" onClick={openUrl}>https://urlshortner-servers.herokuapp.com/short-url/{message}</button>
            </div>
            </div>
             </form>
@@ -170,7 +170,7 @@ export const Shorturl = ()=>{
             urls.map((elem,index)=>{
                 return(
                     <tr key={index}>
-                    <td key={index}><a href={"https://urlshortner-server.herokuapp.com/short-url/"+elem.shorturl} target="_blank">{elem.shorturl}</a></td>
+                    <td key={index}><a href={"https://urlshortner-servers.herokuapp.com/short-url/"+elem.shorturl} target="_blank">{elem.shorturl}</a></td>
                     <td>{elem.clicked}</td>
                   </tr>
                 )

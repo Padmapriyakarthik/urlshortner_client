@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://urlshortner-server.herokuapp.com';
+const BASE_URL = 'https://urlshortner-servers.herokuapp.com';
 
 
 
