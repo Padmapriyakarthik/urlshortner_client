@@ -62,5 +62,5 @@ export const addurl=(token, shorturl,originalurl)=>{
 export const geturl=(email)=>{
     console.log(email);
     return axios
-    .get(`${BASE_URL}/all-url`,{email}).then((res)=>res.data).catch((error)=>error.response.data);
+    .get(`${BASE_URL}/all-url?${email}`).then((res)=>res.data).catch((error)=>error.response.data);
 }
