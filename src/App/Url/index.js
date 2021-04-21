@@ -13,8 +13,8 @@ export const Shorturl = ()=>{
 
     const view=()=>{
         setPage(!page);
-        const {email}=user
-        console.log(email);
+       // const {email}=user
+        console.log(user);
         if(!page)
         {
             geturl(email).then((res)=>{
