@@ -19,7 +19,7 @@ export const Shorturl = ()=>{
             geturl(email).then((data)=>{
 
                 const {message}=data;
-               //setUrls(message);
+               setUrls(message);
                 console.log(message);
                 console.log(data);
     
