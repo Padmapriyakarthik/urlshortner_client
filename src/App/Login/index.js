@@ -33,6 +33,7 @@ export const Login = ({handleLogin,history})=>{
                 setcustomMessage(" ");
                 handleLogin(user,token)
                 alert(message);
+                history.push(`/Dashboard`)
                 
             }
             else
