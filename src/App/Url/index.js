@@ -13,16 +13,16 @@ export const Shorturl = ()=>{
 
     const view=()=>{
         setPage(!page);
-       // const {email}=user
+        const email=user
         console.log(user);
         if(!page)
         {
-            geturl(email).then((res)=>{
+            geturl(email).then((data)=>{
 
-                //const {message}=res.data;
-                //setUrls(message);
+                const {message}=data;
+                setUrls(message);
                 //console.log(urls);
-                console.log(res);
+                //console.log(res);
     
             }).catch((error)=>{
                 console.log(error);
