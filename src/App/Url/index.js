@@ -3,15 +3,15 @@ import React, { useContext, useEffect, useState } from "react"
 import { WrapperContext } from "../index"
 import { addurl,geturl,visitUrl} from "../interaction";
 
-export const Shorturl = ()=>{
+export const Shorturl = ({history})=>{
     const {user,token} = useContext(WrapperContext)
     const [url,setUrl]=useState({shorturl:"",originalurl:""});
-    const [page,setPage]=useState(0);
-    const [urls,setUrls]=useState([]);
+   // const [page,setPage]=useState(0);
+  //  const [urls,setUrls]=useState([]);
     const [custommessage,setcustomMessage]=useState("");
     const [message,setMessage]=useState("");
 
-    const view=()=>{
+  /*  const view=()=>{
         setPage(!page);
         const {email}=user
         if(!page)
@@ -28,7 +28,7 @@ export const Shorturl = ()=>{
             })
         }
         
-    }
+    }*/
    
     const handleCreate=()=>{
         const {shorturl,originalurl} =url
@@ -86,14 +86,33 @@ export const Shorturl = ()=>{
         });
 
     }
+    const create=()=>{
+        history.push(`/Shorturl`)
+    }
+    const view_current_month=()=>{
+        history.push(`/Dashboard`)
+    }
+    const view=()=>{
+        history.push(`/CreatedUrl`);
+    }
     useEffect(()=>{
         console.log("user::::",user)
     },[])
 
-    if(!page){
+   // if(!page){
     return(
         <div className="container p-1">
-        <nav className="nav "><button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button></nav>
+      <ul className="nav flex-column">
+            <li className="nav-item">
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+            </li>
+            <li className="nav-item">
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+            </li>
+            <li className="nav-item">
+            <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+            </li>
+            </ul>
         <div className="container center" >
         
             <form >
@@ -147,8 +166,8 @@ export const Shorturl = ()=>{
         </div>
         </div>
         )
- }
- else{
+ //}
+/* else{
      return(
          <div className="container p-1">
              <ul className="nav">
@@ -182,6 +201,6 @@ export const Shorturl = ()=>{
         </div>
      )
  }
-    
+    */
 
 }

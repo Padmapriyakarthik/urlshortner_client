@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { WrapperContext } from "../index"
 import { addurl,geturl,visitUrl} from "../interaction";
 
-export const CreatedUrl=()=>{
+export const CreatedUrl=({history})=>{
     const {user,token} = useContext(WrapperContext)
     const [urls,setUrls]=useState([]);
 
@@ -25,13 +25,26 @@ export const CreatedUrl=()=>{
         }
         
     }
+    const create=()=>{
+        history.push(`/Shorturl`)
+    }
+    const view_current_month=()=>{
+        history.push(`/Dashboard`)
+    }
     view();
     return(
         <div className="container p-1">
-            <ul className="nav">
+            <ul className="nav flex-column">
             <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Create Short Url </button>
-                </li></ul>
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+            </li>
+            <li className="nav-item">
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+            </li>
+            <li className="nav-item">
+            <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+            </li>
+            </ul>
         
        <div className="container p-5  center" >
        <table className="table table-hover table-dark">
