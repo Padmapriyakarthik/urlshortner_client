@@ -62,7 +62,7 @@ export const addurl=(token, shorturl,originalurl)=>{
 export const geturl=(email)=>{
     
     return axios
-    .get(`${BASE_URL}/all-url/`,{
+    .get(`${BASE_URL}/all-url`,{
         params: {
         email:email
         }
