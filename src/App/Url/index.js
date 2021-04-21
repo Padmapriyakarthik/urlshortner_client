@@ -18,10 +18,10 @@ export const Shorturl = ()=>{
         {
             geturl(email).then((res)=>{
 
-                const {message}=res.data;
-                setUrls(message);
-                console.log(urls);
-                console.log(message);
+                //const {message}=res.data;
+                //setUrls(message);
+                //console.log(urls);
+                console.log(res);
     
             }).catch((error)=>{
                 console.log(error);
