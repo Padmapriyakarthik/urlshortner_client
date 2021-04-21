@@ -59,9 +59,9 @@ export const addurl=(token, shorturl,originalurl)=>{
     .then((res)=>res.data).catch((error)=>(error.response.data));
 }
 
-export const geturl=(email)=>{
-    console.log(email);
-    let payload = { email };
+export const geturl=(ema)=>{
+    
+    let payload = { email:ema };
 
     const params = new url.URLSearchParams(payload);
     return axios
