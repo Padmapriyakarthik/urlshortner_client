@@ -70,6 +70,6 @@ export const geturl=(email)=>{
 }
 
 export const getreport=()=>{
-    return 
-    axios.get(`${BASE_URL}/view-url`).then((res)=>res.data).catch((error)=>error.response);
+    return axios
+    .get(`${BASE_URL}/view-url`).then((res)=>res.data).catch((error)=>error.response);
 }
