@@ -68,3 +68,7 @@ export const geturl=(email)=>{
         }
       }).then((res)=>res.data).catch((error)=>error.response.data);
 }
+
+export const getreport=()=>{
+    return axios.get(`${BASE_URL}/view-url`).then((res)=>res.data).catch((error)=>error.response);
+}
