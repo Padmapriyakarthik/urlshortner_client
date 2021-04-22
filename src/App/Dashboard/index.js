@@ -14,6 +14,7 @@ export const Dashboard=({history})=>{
         getreport(email).then((data)=>{
             const {message}=data;
             console.log(message);
+            console.log(data);
             setCounts(message);
         }).catch((error)=>{
             console.log(error);
