@@ -10,8 +10,10 @@ export const Dashboard=({history})=>{
 
     const view_current_month=()=>{
         const {email}=user
+        console.log(email);
         getreport(email).then((data)=>{
             const {message}=data;
+            console.log(message);
             setCounts(message);
         }).catch((error)=>{
             console.log(error);
