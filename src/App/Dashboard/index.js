@@ -4,7 +4,7 @@ import { getreport } from "../interaction"
 import { Chart } from "react-google-charts"
 export const Dashboard=({history})=>{
     
-    const [count,setCounts]=useState([])
+    const [count,setCount]=useState([])
     const [counts,setCounts]=useState({})
 
     const view_current_month=()=>{
