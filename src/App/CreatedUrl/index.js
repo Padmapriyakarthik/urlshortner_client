@@ -1,19 +1,16 @@
 import React, { useContext, useEffect, useState } from "react"
 
 import { WrapperContext } from "../index"
-import { addurl,geturl,visitUrl} from "../interaction";
+import { geturl} from "../interaction";
 
 export const CreatedUrl=({history})=>{
     const {user,token} = useContext(WrapperContext)
     const [urls,setUrls]=useState([]);
 
     const view=()=>{
-        //setPage(!page);
         const {email}=user
-       // if(!page)
         {
             geturl(email).then((data)=>{
-
                 const {message}=data;
                setUrls(message);
                 console.log(message);
@@ -46,7 +43,7 @@ export const CreatedUrl=({history})=>{
             </li>
             </ul>
         
-       <div className="container p-5  center" >
+       <div className="container  center" >
        <table className="table table-hover table-dark">
        <thead>
        <tr>
