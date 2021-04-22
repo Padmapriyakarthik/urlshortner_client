@@ -4,12 +4,15 @@ import { getreport } from "../interaction"
 import { Chart } from "react-google-charts"
 export const Dashboard=({history})=>{
     
-    const [count,setCount]=useState([])
-    const [counts,setCounts]=useState({})
+    const {user} = useContext(WrapperContext)
+    //const [count,setCount]=useState([])
+    const [num_Of_Urls,setCounts]=useState([])
 
     const view_current_month=()=>{
-        getreport().then((data)=>{
-            console.log(data);
+        const {email}=user
+        getreport(email).then((data)=>{
+            const {message}=data;
+            setCounts(message);
         }).catch((error)=>{
             console.log(error);
         })
@@ -73,8 +76,7 @@ export const Dashboard=({history})=>{
       },
     },
   ]}
-  // For tests
-  rootProps={{ 'data-testid': '1' }}
+  
 />
             </div>
 
