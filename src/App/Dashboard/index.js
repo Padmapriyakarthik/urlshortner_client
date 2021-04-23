@@ -33,6 +33,8 @@ export const Dashboard=({history})=>{
     }
     return(
         <div className="container p-1">
+          <div className="row">
+            <div className="col-4">
             <ul className="nav flex-column">
             <li className="nav-item">
                 <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
@@ -44,7 +46,10 @@ export const Dashboard=({history})=>{
             <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
             </li>
             </ul>
-            <div className="container center" >
+            </div>
+        
+            <div className="col-8 center" >
+              <p>Hai! Create Your Own Customized Url</p>
               {enable ?
                    <Chart
   width={'400px'}
@@ -83,6 +88,8 @@ export const Dashboard=({history})=>{
 }          
             </div>
 
+          </div>
+           
         </div>
     )
 }
