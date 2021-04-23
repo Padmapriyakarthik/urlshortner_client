@@ -14,22 +14,16 @@ export const Dashboard=({history})=>{
         getreport(email).then((data)=>{
             const {message}=data;
              console.log(message);
-            //console.log(data);
-           // setCounts(message);
             message.map((elem)=>{
               let arr=[];
-             // console.log(elem._id+""+elem.count)
-             // console.log(arr);
               arr.push(elem._id);
               arr.push(elem.count)
-              //console.log(arr);
               const new_count=[...num_Of_Urls];
               new_count.push(arr);
-              console.log(new_count);
-              setCounts(new_count);
               console.log(num_Of_Urls);
+              setCounts(new_count);
             })
-            console.log(num_Of_Urls);
+            //console.log(num_Of_Urls);
 
         }).catch((error)=>{
             console.log(error);
