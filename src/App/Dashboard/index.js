@@ -6,15 +6,13 @@ export const Dashboard=({history})=>{
     
     const {user} = useContext(WrapperContext)
     const [Data,setData]=useState([])
-    const [enable,setEnable]=useState(0);
-
+  
     const view_current_month=()=>{
         const {email}=user
         console.log(email);
         getreport(email).then((data)=>{
             const {message}=data;
-            setData(message);
-            setEnable(!enable)
+              setData(message);  
         }).catch((error)=>{
             console.log(error);
         })
@@ -39,8 +37,7 @@ export const Dashboard=({history})=>{
             </li>
             </ul>
             <div className="container center" >
-              {{if(enable){
-                
+              
                    <Chart
   width={'400px'}
   height={'200px'}
@@ -76,8 +73,6 @@ export const Dashboard=({history})=>{
   
 />
                 
-              }}}
-           
             </div>
 
         </div>
