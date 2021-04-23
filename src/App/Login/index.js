@@ -256,7 +256,7 @@ export const Login = ({handleLogin,history})=>{
     return(
 
 
-        <div className="container p-5 center" >
+        <div className="container p-2 center" >
             <h1 style={{color:"salmon",fontSize:"32px"}}>Hello!, Welcome To Short URL</h1>
             <form>
                 <h1 style={{fontSize:"28px"}}>Login</h1>
