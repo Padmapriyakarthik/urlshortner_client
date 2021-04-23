@@ -168,7 +168,7 @@ export const Login = ({handleLogin,history})=>{
 
         return(
 
-            <div className="container back center" >
+            <div className="container center" >
                 <form >
                 <h1 style={{fontSize:"28px"}}>Signup</h1>
                 <div className="row">
@@ -258,7 +258,8 @@ export const Login = ({handleLogin,history})=>{
 
         <div className="container p-2 center" >
             <h1 style={{color:"salmon",fontSize:"32px"}}>Hello!, Welcome To Short URL</h1>
-            <form>
+
+            <form className="p-3">
                 <h1 style={{fontSize:"28px"}}>Login</h1>
                 <div className="row" >
                     <div offset="col-2">
