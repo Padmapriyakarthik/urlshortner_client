@@ -6,7 +6,7 @@ export const Dashboard=({history})=>{
     
     const {user} = useContext(WrapperContext)
     //const [count,setCount]=useState([])
-    const [num_Of_Urls,setCounts]=useState([])
+    const [num_Of_Urls,setCounts]=useState([["count","Date"]])
 
     const view_current_month=()=>{
         const {email}=user
