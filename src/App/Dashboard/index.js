@@ -14,11 +14,11 @@ export const Dashboard=({history})=>{
         getreport(email).then((data)=>{
             const {message}=data;
              console.log(message);
-            message.forEach((elem)=>{
+            message.forEach((elem,index)=>{
               let arr=[];
-              arr.push(elem._id);
-              arr.push(elem.count)
-              console.log(array);
+              arr.push(elem[index]._id);
+              arr.push(elem[index].count)
+              console.log(arr);
               const new_count=[...num_Of_Urls];
               new_count.push(arr);
               setCounts(new_count);
