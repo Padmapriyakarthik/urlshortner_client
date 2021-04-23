@@ -18,9 +18,12 @@ export const Dashboard=({history})=>{
            // setCounts(message);
             message.map((elem)=>{
               let arr=[];
+              console.log(elem._id,elem._count)
               arr.push(elem._id);
               arr.push(elem.count)
+              console.log(arr);
               setCounts(...num_Of_Urls,...arr);
+              console.log(num_Of_Urls);
             })
             console.log(num_Of_Urls);
 
