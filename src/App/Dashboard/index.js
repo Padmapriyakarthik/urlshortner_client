@@ -40,8 +40,7 @@ export const Dashboard=({history})=>{
             </ul>
             <div className="container center" >
               {{if(enable){
-                return(
-                  <>
+                
                    <Chart
   width={'400px'}
   height={'200px'}
@@ -75,8 +74,8 @@ export const Dashboard=({history})=>{
     },
   ]}
   
-/></>
-                )
+/>
+                
               }}}
            
             </div>
