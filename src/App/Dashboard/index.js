@@ -48,7 +48,7 @@ export const Dashboard=({history})=>{
               {enable ?
                    <Chart
   width={'400px'}
-  height={'200px'}
+  height={'500px'}
   chartType="ColumnChart"
   loader={<div>Loading Chart</div>}
   data={Data}
