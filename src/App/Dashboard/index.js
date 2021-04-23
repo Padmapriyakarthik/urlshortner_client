@@ -20,8 +20,9 @@ export const Dashboard=({history})=>{
               arr.push(elem.count)
               const new_count=[...num_Of_Urls];
               new_count.push(arr);
-              console.log(num_Of_Urls);
+              console.log(new_count);
               setCounts(new_count);
+              console.log(num_Of_Urls);
             })
             //console.log(num_Of_Urls);
 
