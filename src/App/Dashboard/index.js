@@ -6,15 +6,15 @@ export const Dashboard=({history})=>{
     
     const {user} = useContext(WrapperContext)
     const [Data,setData]=useState([])
-   // const [num_Of_Urls,setCounts]=useState([[]])
+    const [enable,setEnable]=useState(0);
 
     const view_current_month=()=>{
         const {email}=user
         console.log(email);
         getreport(email).then((data)=>{
             const {message}=data;
-            console.log(message)
             setData(message);
+            setEnable(!enable)
         }).catch((error)=>{
             console.log(error);
         })
@@ -38,22 +38,22 @@ export const Dashboard=({history})=>{
             <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
             </li>
             </ul>
-            <div className="container p-5  center" >
+            <div className="container center" >
             <Chart
-  width={'500px'}
-  height={'300px'}
+  width={'400px'}
+  height={'200px'}
   chartType="ColumnChart"
   loader={<div>Loading Chart</div>}
-  data={Data}
+  data={{if(enable){Data}}}
   options={{
     title: 'Population of Largest U.S. Cities',
     chartArea: { width: '50%' },
     hAxis: {
-      title: 'Total Population',
+      title: 'URL Created Date',
       minValue: 0,
     },
     vAxis: {
-      title: 'City',
+      title: 'Number of URL Created',
     },
     legend: 'none',
      animation: {
