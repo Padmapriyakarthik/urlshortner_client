@@ -254,8 +254,8 @@ export const Login = ({handleLogin,history})=>{
 
     }
     return(
-
-        <div className="container back" >
+<div className="back">
+        <div className="container center" >
             <form>
                 <h1 style={{fontSize:"28px"}}>Login</h1>
                 <div className="row" >
@@ -306,6 +306,7 @@ export const Login = ({handleLogin,history})=>{
                 </div>
                 
             </form>
+        </div>
         </div>
     )
 }
