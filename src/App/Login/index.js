@@ -254,7 +254,7 @@ export const Login = ({handleLogin,history})=>{
 
     }
     return(
-<div className="back">
+<div style={{backgroundImage:URL("https://mybigplunge.com/wp-content/uploads/2018/04/url-shortener-theplungedaily.jpg")}}>
         <div className="container center" >
             <form>
                 <h1 style={{fontSize:"28px"}}>Login</h1>

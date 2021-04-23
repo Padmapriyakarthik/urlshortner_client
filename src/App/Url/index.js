@@ -144,6 +144,9 @@ export const Shorturl = ({history})=>{
                   <span style={{color: "Black",fontSize: "18px"}}>visit the site with your url</span> 
 
                 <button type="button" className="btn btn-link" onClick={openUrl} style={{fontSize: "18px",backgroundColor:"whitesmoke"}}>https://urlshortner-servers.herokuapp.com/short-url/{message}</button>
+                
+                <span style={{color: "Black",fontSize: "18px"}}>your url:</span> 
+                <p style={{color:"Red",fontSize:"18px"}}>https://urlshortner-servers.herokuapp.com/short-url/{message}</p>
            </div>
            </div>
             </form>
