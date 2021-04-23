@@ -254,8 +254,10 @@ export const Login = ({handleLogin,history})=>{
 
     }
     return(
-<div style={{backgroundImage:`url("https://mybigplunge.com/wp-content/uploads/2018/04/url-shortener-theplungedaily.jpg")`,backgroundRepeat:"no-repeat",width:"2100px",height:"900px",backgroundAttachment:"fixed"}}>
+
+
         <div className="container p-5 center" >
+            <h1 style={{color:"salmon",fontSize:"32px"}}>Hello!, Welcome To Short URL</h1>
             <form>
                 <h1 style={{fontSize:"28px"}}>Login</h1>
                 <div className="row" >
@@ -307,6 +309,6 @@ export const Login = ({handleLogin,history})=>{
                 
             </form>
         </div>
-        </div>
+   
     )
 }
