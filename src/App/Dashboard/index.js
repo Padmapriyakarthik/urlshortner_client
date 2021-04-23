@@ -5,7 +5,7 @@ import { Chart } from "react-google-charts"
 export const Dashboard=({history})=>{
     
     const {user} = useContext(WrapperContext)
-    //const [count,setCount]=useState([])
+    const [count,setCount]=useState([])
     const [num_Of_Urls,setCounts]=useState([])
 
     const view_current_month=()=>{
@@ -15,11 +15,13 @@ export const Dashboard=({history})=>{
             const {message}=data;
              console.log(message);
             message.forEach((elem)=>{
-              let arr=[];
-              arr.push(elem._id,elem.count);
-              console.log(arr);
+              let new_arr=[...count];
+              new_arr.push(elem._id,elem.count);
+              console.log(new_arr);
+              setCount(new_arr);
               let new_count=[...num_Of_Urls];
-              new_count.push(arr);
+              new_count.push(new_arr);
+              setCount([]);
               console.log(new_count);
               setCounts(new_count);
               arr.pop()
@@ -27,7 +29,7 @@ export const Dashboard=({history})=>{
               //num_Of_Urls.push(arr);
              // console.log(num_Of_Urls);
             })
-            //console.log(num_Of_Urls);
+            console.log(num_Of_Urls);
 
         }).catch((error)=>{
             console.log(error);
