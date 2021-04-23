@@ -39,12 +39,15 @@ export const Dashboard=({history})=>{
             </li>
             </ul>
             <div className="container center" >
-            <Chart
+              {{if(enable){
+                return(
+                  <>
+                   <Chart
   width={'400px'}
   height={'200px'}
   chartType="ColumnChart"
   loader={<div>Loading Chart</div>}
-  data={{if(enable){Data}}}
+  data={Data}
   options={{
     title: 'Population of Largest U.S. Cities',
     chartArea: { width: '50%' },
@@ -72,7 +75,10 @@ export const Dashboard=({history})=>{
     },
   ]}
   
-/>
+/></>
+                )
+              }}}
+           
             </div>
 
         </div>
