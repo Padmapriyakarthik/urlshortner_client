@@ -59,7 +59,7 @@ export const Dashboard=({history})=>{
   loader={<div>Loading Chart</div>}
   data={Data}
   options={{
-    title: 'Population of Largest U.S. Cities',
+    title: 'URL Created Per Month',
     chartArea: { width: '50%' },
     hAxis: {
       title: 'URL Created Date',

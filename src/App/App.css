@@ -37,7 +37,11 @@
   }
 }
 
+.back{
+    background-image: url("https://mybigplunge.com/wp-content/uploads/2018/04/url-shortener-theplungedaily.jpg");
+    background-attachment: fixed;
 
+}
 
 .center {
   margin: auto;

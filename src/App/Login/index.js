@@ -168,7 +168,7 @@ export const Login = ({handleLogin,history})=>{
 
         return(
 
-            <div className="container p-5  center" >
+            <div className="container back center" >
                 <form >
                 <h1 style={{fontSize:"28px"}}>Signup</h1>
                 <div className="row">
@@ -255,7 +255,7 @@ export const Login = ({handleLogin,history})=>{
     }
     return(
 
-        <div className="container p-5  center"  style={{backgroundColor: "lightblue"}}>
+        <div className="container p-5  center" >
             <form>
                 <h1 style={{fontSize:"28px"}}>Login</h1>
                 <div className="row" >
@@ -298,10 +298,10 @@ export const Login = ({handleLogin,history})=>{
                 className="btn btn-primary"
                 onClick={handleSubmit}
                 >Login</button> 
-                 <button type="button" className="btn btn-link" style={{color: "red"}}onClick={handleforgotpassword}>forgot Password?</button>
+                 <button type="button" className="btn btn-link" style={{color: "red",fontSize:"18px"}}onClick={handleforgotpassword}>forgot Password?</button>
                 <p style={{color: "green",fontSize:"20px"}}>{message}</p>
                 <span style={{fontSize:"22px"}}>Not an user already</span>
-                <button type="button" className="btn btn-link" style={{color: "green"}}onClick={handlepage}>Sign up</button>
+                <button type="button" className="btn btn-link" style={{color: "green",fontSize:"20px"}}onClick={handlepage}>Sign up</button>
                 </div>
                 </div>
                 
