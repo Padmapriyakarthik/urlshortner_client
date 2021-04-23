@@ -44,13 +44,7 @@ export const Dashboard=({history})=>{
   height={'300px'}
   chartType="ColumnChart"
   loader={<div>Loading Chart</div>}
-  data={[
-    ['New York City, NY', 8175000, 8008000],
-    ['Los Angeles, CA', 3792000, 3694000],
-    ['Chicago, IL', 2695000, 2896000],
-    ['Houston, TX', 2099000, 1953000],
-    ['Philadelphia, PA', 1526000, 1517000],
-  ]}
+  data={Data}
   options={{
     title: 'Population of Largest U.S. Cities',
     chartArea: { width: '50%' },
