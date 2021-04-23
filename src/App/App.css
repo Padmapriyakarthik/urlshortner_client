@@ -40,7 +40,7 @@
 .back{
     background-image: url("https://mybigplunge.com/wp-content/uploads/2018/04/url-shortener-theplungedaily.jpg");
     background-attachment: fixed;
-    background-size: 1200px 700px;
+    background-size: cover;
 }
 
 .center {
