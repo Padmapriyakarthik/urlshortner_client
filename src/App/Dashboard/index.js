@@ -31,6 +31,7 @@ export const Dashboard=({history})=>{
     const view=()=>{
         history.push(`/CreatedUrl`)
     }
+    view_current_month()
     return(
         <div className="container p-1">
           <div className="row">

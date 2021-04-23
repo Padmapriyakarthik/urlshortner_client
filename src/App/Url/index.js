@@ -82,18 +82,22 @@ export const Shorturl = ({history})=>{
 
     return(
         <div className="container p-1">
-      <ul className="nav flex-column">
-            <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
-            </li>
-            <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
-            </li>
-            <li className="nav-item">
-            <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
-            </li>
-            </ul>
-        <div className="container center" >
+            <div className="row">
+                <div className="col-4">
+                <ul className="nav flex-column">
+                <li className="nav-item">
+                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+                </li>
+                <li className="nav-item">
+                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+                </li>
+                <li className="nav-item">
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+                </li>
+                </ul>
+                </div>
+                
+        <div className="col-8 center" >
         
             <form >
                 <h1>Create Url</h1>
@@ -144,6 +148,8 @@ export const Shorturl = ({history})=>{
            </div>
             </form>
         </div>
+            </div>
+        
         </div>
         )
  

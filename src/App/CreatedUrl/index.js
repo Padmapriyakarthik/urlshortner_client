@@ -31,19 +31,23 @@ export const CreatedUrl=({history})=>{
     view();
     return(
         <div className="container p-1">
-            <ul className="nav flex-column">
-            <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
-            </li>
-            <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
-            </li>
-            <li className="nav-item">
-            <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
-            </li>
-            </ul>
+            <div className="row">
+                <div className="col-4">
+                <ul className="nav flex-column">
+                <li className="nav-item">
+                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+                </li>
+                <li className="nav-item">
+                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+                </li>
+                <li className="nav-item">
+                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+                </li>
+                </ul>
+                </div>
+
         
-       <div className="container  center" >
+       <div className="col-6  center" >
        <table className="table table-hover table-dark">
        <thead>
        <tr>
@@ -66,6 +70,8 @@ export const CreatedUrl=({history})=>{
        </tbody>
        </table>
        </div>
+            </div>
+          
        </div>
     )
 }
