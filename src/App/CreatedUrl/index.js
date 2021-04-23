@@ -38,10 +38,10 @@ export const CreatedUrl=({history})=>{
                     <button type="button" className="btn btn-link" style={{color: "green",fontSize:"24px"}} onClick={view_current_month}>Report</button>
                 </li>
                 <li className="nav-item">
-                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+                    <button type="button" className="btn btn-link" style={{color: "green",fontSize:"24px"}} onClick={create}> Create Short Url </button>
                 </li>
                 <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+                <button type="button" className="btn btn-link" style={{color: "green",fontSize:"24px"}} onClick={view}> Availabel ShortUrl's </button>
                 </li>
                 </ul>
                 </div>
