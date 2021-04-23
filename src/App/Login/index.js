@@ -127,14 +127,14 @@ export const Login = ({handleLogin,history})=>{
     {
         return(
 
-            <div className="container p-5  center"  style={{backgroundColor: "lightblue"}}>
+            <div className="container p-5  center" >
                 <form >
-                <h1>Signup</h1>
+                <h1 style={{fontSize:"28px"}}>Signup</h1>
                 <div className="row">
                     <div offset="col-2">
                 <div className="row">
                 <div  className="col-12">
-                    <label for="email"> Email</label>
+                    <label for="email" style={{fontSize:"22px"}}> Email</label>
                     <input 
                         type="email" 
                         name="email" 
@@ -149,13 +149,13 @@ export const Login = ({handleLogin,history})=>{
                         />
                     </div>
                     </div>
-                    <p style={{color: "red"}}>{custommessage}</p>
+                    <p style={{color: "red",fontSize:"20px"}}>{custommessage}</p>
                     <button 
                     type="button"
                     className="btn btn-primary"
                     onClick={changepassword}
                     > comfirm email address</button>
-                    <p style={{color: "green"}}>{message}</p>
+                    <p style={{color: "green",fontSize:"20px"}}>{message}</p>
                 
             </div>
             </div>
@@ -168,14 +168,14 @@ export const Login = ({handleLogin,history})=>{
 
         return(
 
-            <div className="container p-5  center"  style={{backgroundColor: "lightblue"}}>
+            <div className="container p-5  center" >
                 <form >
-                <h1>Signup</h1>
+                <h1 style={{fontSize:"28px"}}>Signup</h1>
                 <div className="row">
                     <div offset="col-2">
                         <div className="row">
                 <div  className="col-12">
-                    <label for="email"> Email</label>
+                    <label for="email" style={{fontSize:"22px"}}> Email</label>
                     <input 
                         type="email" 
                         name="email" 
@@ -190,7 +190,7 @@ export const Login = ({handleLogin,history})=>{
                         />
                     </div>
                 <div className="col-12">
-                    <label for="fname">FirstName</label>
+                    <label for="fname" style={{fontSize:"22px"}}>FirstName</label>
                 <input 
                     type="text" 
                     name="firstname" 
@@ -205,7 +205,7 @@ export const Login = ({handleLogin,history})=>{
                     />
                 </div>
                 <div className="col-12">
-                <label for="lname">LastName</label>
+                <label for="lname" style={{fontSize:"22px"}}>LastName</label>
                 <input 
                     type="text" 
                     name="lastname" 
@@ -221,7 +221,7 @@ export const Login = ({handleLogin,history})=>{
                 </div>
 
                 <div className="col-12">
-                <label for="password">Password</label>
+                <label for="password" style={{fontSize:"22px"}}>Password</label>
                     <input
                     type="password" 
                     name="password" 
@@ -235,7 +235,7 @@ export const Login = ({handleLogin,history})=>{
                     required/>
                 </div>
                 </div>
-                    <p style={{color: "red"}}>{custommessage}</p>
+                    <p style={{color: "red",fontSize:"20px"}}>{custommessage}</p>
                     <button 
                     type="button"
                     className="btn btn-primary"
@@ -243,7 +243,7 @@ export const Login = ({handleLogin,history})=>{
                     >Signup</button>
                     
                     
-                    <p style={{color: "green"}}>{message}</p>
+                    <p style={{color: "green",fontSize:"20px"}}>{message}</p>
                     </div>
                  
                     </div>
@@ -257,12 +257,12 @@ export const Login = ({handleLogin,history})=>{
 
         <div className="container p-5  center"  style={{backgroundColor: "lightblue"}}>
             <form>
-                <h1>Login</h1>
+                <h1 style={{fontSize:"28px"}}>Login</h1>
                 <div className="row" >
                     <div offset="col-2">
                 <div className="row">
                     <div className="col-12">
-                        <label for="email">Email</label>
+                        <label for="email" style={{fontSize:"22px"}}>Email</label>
                             <input 
                         type="email" 
                         name="email" 
@@ -276,7 +276,7 @@ export const Login = ({handleLogin,history})=>{
                         required/>
                     </div>
                  <div  className=" col-12">
-                        <label for="password">Password</label>
+                        <label for="password" style={{fontSize:"22px"}}>Password</label>
 
                         <input 
                         type="password" 
@@ -292,15 +292,15 @@ export const Login = ({handleLogin,history})=>{
                         required/>
                 </div>
                 </div>
-               <p style={{color: "red"}}>{custommessage}</p>
+               <p style={{color: "red",fontSize:"20px"}}>{custommessage}</p>
                 <button 
                 type="button"
                 className="btn btn-primary"
                 onClick={handleSubmit}
                 >Login</button> 
                  <button type="button" className="btn btn-link" style={{color: "red"}}onClick={handleforgotpassword}>forgot Password?</button>
-                <p style={{color: "green"}}>{message}</p>
-                <span>Not an user already</span>
+                <p style={{color: "green",fontSize:"20px"}}>{message}</p>
+                <span style={{fontSize:"22px"}}>Not an user already</span>
                 <button type="button" className="btn btn-link" style={{color: "green"}}onClick={handlepage}>Sign up</button>
                 </div>
                 </div>

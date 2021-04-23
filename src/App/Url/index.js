@@ -86,13 +86,13 @@ export const Shorturl = ({history})=>{
                 <div className="col-4">
                 <ul className="nav flex-column">
                 <li className="nav-item">
-                    <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={view_current_month}>Created this month</button>
+                    <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={view_current_month}>Report</button>
                 </li>
                 <li className="nav-item">
-                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+                    <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={create}> Create Short Url </button>
                 </li>
                 <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+                <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={view}> Availabel ShortUrl's </button>
                 </li>
                 </ul>
                 </div>
@@ -100,12 +100,12 @@ export const Shorturl = ({history})=>{
         <div className="col-8 center" >
         
             <form >
-                <h1>Create Url</h1>
+                <h1 style={{fontSize: "28px"}}>Create Url</h1>
                 <div className="row">
                     <div offset="col-2">
                 <div className="row">
                 <div  className="col-12">
-                    <label htmlFor="oUrl">Original Url</label>
+                    <label htmlFor="oUrl" style={{color: "Black",fontSize: "22px"}}>Original Url</label>
                 <input 
                 type="text"
                 name="url"
@@ -120,7 +120,7 @@ export const Shorturl = ({history})=>{
                 />
                 </div>
                 <div className="col-12">
-                    <label htmlFor="surl">ShortUrl</label> 
+                    <label htmlFor="surl" style={{color: "Black",fontSize: "22px"}}>ShortUrl</label> 
                 <input 
                 type="text"
                 name="name"
@@ -135,15 +135,15 @@ export const Shorturl = ({history})=>{
                 />
             </div>
             </div>
-                <p style={{color: "red"}}>{custommessage}</p>
+                <p style={{color: "red",fontSize: "18px"}}>{custommessage}</p>
                 <button 
                 type="button"
                 className="btn btn-primary"
                 onClick={handleCreate}
                 >create url</button>
-                  <span>visit the site with your url</span> 
+                  <span style={{color: "Black",fontSize: "18px"}}>visit the site with your url</span> 
 
-                <button type="button" className="btn btn-link" onClick={openUrl}>https://urlshortner-servers.herokuapp.com/short-url/{message}</button>
+                <button type="button" className="btn btn-link" onClick={openUrl} style={{fontSize: "18px",backgroundColor:"whitesmoke"}}>https://urlshortner-servers.herokuapp.com/short-url/{message}</button>
            </div>
            </div>
             </form>

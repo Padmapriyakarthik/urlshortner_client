@@ -14,7 +14,7 @@ export const Header = ({logout})=>{
 
                <ul className="nav ">
                <li className="nav-item">
-               <button type="button" className="btn btn-link" style={{color: "red"}} onClick={logout}>Logout</button>
+               <button type="button" className="btn btn-link" style={{color: "red",fontSize:"24px"}} onClick={logout}>Logout</button>
                </li>
                </ul>
               

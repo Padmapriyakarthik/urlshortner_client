@@ -38,19 +38,19 @@ export const Dashboard=({history})=>{
             <div className="col-4">
             <ul className="nav flex-column">
             <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+                <button type="button" className="btn btn-link" style={{color: "green",fontSize:"24px"}} onClick={view_current_month}>Report</button>
             </li>
             <li className="nav-item">
-                <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
+                <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={create}> Create Short Url </button>
             </li>
             <li className="nav-item">
-            <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view}> Availabel ShortUrl's </button>
+            <button type="button" className="btn btn-link" style={{color: "green",fontSize:"24px"}} onClick={view}> Availabel ShortUrl's </button>
             </li>
             </ul>
             </div>
         
             <div className="col-8 center" >
-              <p>Hai! Create Your Own Customized Url</p>
+              <p style={{color: "salmon",fontSize:"28px",fontStyle:"italic"}}>Hai! Create Your Own Customized Url</p>
               {enable ?
                    <Chart
   width={'400px'}
@@ -85,7 +85,7 @@ export const Dashboard=({history})=>{
     },
   ]}
   
-/> : <p>{no_data}</p>
+/> : <p style={{color: "red",fontSize:"20px"}}>{no_data}</p>
 }          
             </div>
 

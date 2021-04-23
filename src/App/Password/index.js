@@ -35,13 +35,13 @@ export const Password = ({history})=>{
         }
     }
     return(
-        <div className="container p-5  center"  style={{backgroundColor: "lightblue"}}>
+        <div className="container p-5  center" >
         <form >
         <div className="row">
             <div offset="col-2">
         <div className="row">
         <div  className="col-12">
-            <label htmlFor="newpwd">New Password</label>
+            <label htmlFor="newpwd" style={{fontSize:"22px"}}>New Password</label>
             <input 
                 type="password" 
                 name="newpwd" 
@@ -56,7 +56,7 @@ export const Password = ({history})=>{
                 />
             </div>
             <div  className="col-12">
-            <label htmlFor="cnfmpwd">Confirm New Password</label>
+            <label htmlFor="cnfmpwd" style={{fontSize:"22px"}}>Confirm New Password</label>
             <input 
                 type="password" 
                 name="cnfmpwd" 
@@ -71,13 +71,13 @@ export const Password = ({history})=>{
                 />
             </div>
             </div>
-            <p style={{color: "red"}}>{custommessage}</p>
+            <p style={{color: "red",fontSize:"20px"}}>{custommessage}</p>
             <button 
             type="button"
             className="btn btn-primary"
             onClick={changepassword}
             > change password</button>
-            <p style={{color: "green"}}>{message}</p>
+            <p style={{color: "green",fontSize:"20px"}}>{message}</p>
         
     </div>
     </div>
