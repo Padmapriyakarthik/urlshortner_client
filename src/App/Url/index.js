@@ -86,7 +86,7 @@ export const Shorturl = ({history})=>{
                 <div className="col-4">
                 <ul className="nav flex-column">
                 <li className="nav-item">
-                    <button type="button" className="btn btn-link" style={{color: "green"}} onClick={view_current_month}>Created this month</button>
+                    <button type="button" className="btn btn-link" style={{color: "green",fontSize: "24px"}} onClick={view_current_month}>Created this month</button>
                 </li>
                 <li className="nav-item">
                     <button type="button" className="btn btn-link" style={{color: "green"}} onClick={create}> Create Short Url </button>
